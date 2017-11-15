@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hyojung.ldws.MainActivity">
+
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="#ffc000">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/haha"
+                android:layout_marginRight="5dp"
+                />
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_margin="20dp"
+            android:background="@drawable/face"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/situation"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상황 메세지"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:gravity="center"
+            android:padding="10dp"
+            android:onClick="sound"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/sound_back">
+            <ImageView
+                android:src="@drawable/sound"
+                android:scaleType="fitCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소리"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:padding="10dp"
+            android:onClick="vibrate"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/vibratioin_back">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/vibration"
+                android:scaleType="fitCenter"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="진동"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:onClick="setting"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/setting_back">
+            <ImageView
+                android:src="@drawable/setting"
+                android:scaleType="fitCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="설정"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:padding="10dp"
+            android:onClick="home"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_back">
+            <ImageView
+                android:src="@drawable/list"
+                android:scaleType="fitCenter"
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상황 목록"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity = "end"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="40dp"
+        android:background="#262626">
+    <ImageView
+        android:layout_marginBottom="10dp"
+        android:layout_width="136dp"
+        android:layout_height= "52dp"
+        android:background="@drawable/logo"/>
+    <EditText
+        android:padding="10dp"
+        android:background="#000"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:textColor="#fff"
+
+        android:textColorHint="#fff"
+        android:hint="ID"/>
+    <EditText
+        android:padding="10dp"
+        android:background="#000"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textCursorDrawable="@null"
+        android:textColor="#fff"
+
+        android:textColorHint="#fff"
+        android:hint="PASSWORD"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#fff"/>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

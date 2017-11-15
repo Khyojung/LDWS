@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/popup_back"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src = "@drawable/car"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:text="승용차 경적"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:text="주변을 살펴주세요!"/>
+    <Button
+        android:onClick="popupOk"
+        android:background="@drawable/popup_btn_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:text="알겠어요"/>
+
+</LinearLayout>
