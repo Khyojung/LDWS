@@ -55,9 +55,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void login(View v){
+
+
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         if(! drawerLayout.isDrawerOpen(Gravity.END)){
-            drawerLayout.isDrawerOpen(Gravity.END);
+            drawerLayout.openDrawer(Gravity.END);
         }
     }
 
